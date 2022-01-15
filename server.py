@@ -21,7 +21,7 @@ def new_user():
 
 @app.route('/allusers')
 def all():
-    return render_template('form2', users=User.get_all())
+    return render_template('form2.html', users=User.get_all())
 
 
 if __name__ == "__main__":
